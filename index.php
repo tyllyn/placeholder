@@ -2,11 +2,11 @@
 /**
  * Use your favorite autoload routine here.
  */
-function __autoload($class)  
-{  
+function classAutoLoader($class) {
   $filename = str_replace('\\', '/', $class) . '.php';  
   @require_once 'classes/'.$filename;  
 }
+spl_autoload_register('classAutoLoader');
 
 /**
  * Define a variable or constant that points to the image folder

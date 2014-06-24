@@ -202,30 +202,3 @@ class SimpleImage {
     }
 
 }
-
-// Usage:
-// Load the original image
-$image = new SimpleImage('lemon.jpg');
-
-// Resize the image to 600px width and the proportional height
-$image->resizeToWidth(600);
-$image->save('lemon_resized.jpg');
-
-// Create a squared version of the image
-$image->square(200);
-$image->save('lemon_squared.jpg');
-
-// Scales the image to 75%
-$image->scale(75);
-$image->save('lemon_scaled.jpg');
-
-// Resize the image to specific width and height
-$image->resize(80,60);
-$image->save('lemon_resized2.jpg');
-
-// Resize the canvas and fill the empty space with a color of your choice
-$image->maxareafill(600,400, 32, 39, 240);
-$image->save('lemon_filled.jpg');
-
-// Output the image to the browser:
-$image->output();

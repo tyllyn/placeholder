@@ -153,8 +153,6 @@ class PlaceHolder extends SimpleImage
 	 */
 	public function __construct($path = null) {
 
-        die('...'.$path);
-
 		$this->imageFolder = $path;
 
 		if (!is_dir($this->imageFolder) || !is_writable($this->imageFolder)) {

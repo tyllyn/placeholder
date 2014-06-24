@@ -126,7 +126,7 @@ class PlaceHolder extends SimpleImage
 	 * @access private
 	 * @var string
 	 */
-	private $image;
+	private $imagePath;
 
 	/**
 	 * holds the effects array
@@ -277,7 +277,7 @@ class PlaceHolder extends SimpleImage
 		/**
 		 * construct an array selection
 		 */
-		$this->image = $this->images[$this->num];
+		$this->imagePath = $this->images[$this->num];
 
 		return $this->imageFolder.$this->image;
 	}

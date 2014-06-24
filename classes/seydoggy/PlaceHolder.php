@@ -24,8 +24,6 @@
  * @see        SimpleImage, seydoggy\SimpleImage()
  */
 
-namespace seydoggy;
-
 /**
  * Generates random placeholder image
  *
@@ -42,7 +40,7 @@ namespace seydoggy;
  * @see        SimpleImage, seydoggy\SimpleImage()
  * @since      Class available since Release 1.0.0
  */
-class PlaceHolder extends \seydoggy\SimpleImage
+class PlaceHolder extends SimpleImage
 {
 	/**
 	 * Holds the value of the path argument passed to of constructor.

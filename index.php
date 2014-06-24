@@ -16,4 +16,4 @@ define('IMAGEPATH', dirname(__FILE__).'/image_placeholders/');
 /**
  * Initialize the PlaceHolder object
  */
-$placeholder = new \seydoggy\PlaceHolder(IMAGEPATH);
+$placeholder = new PlaceHolder(IMAGEPATH);
